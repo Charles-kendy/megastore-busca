@@ -5,26 +5,35 @@ Este projeto tem como objetivo desenvolver um sistema de busca eficiente utiliza
 
 Tecnologias utilizadas:
 - Rust
-- HashMap
+- HashMap (std::collections)
 
 Como executar:
 1. Clonar o repositório
 2. Acessar a pasta do projeto
-3. Executar o comando cargo run
+3. Executar:
+cargo run
 
-Testes:
-Executar o comando cargo test
+Como executar os testes:
+cargo test
 
-Estrutura do projeto:
-- main.rs: ponto de entrada do sistema
-- produto.rs: estrutura que representa o produto
-- busca.rs: implementação do sistema de busca
+Exemplos de uso:
+Buscar produto "tv"
+Resultado: Smart TV
 
-Estruturas de dados:
-Foi utilizado HashMap para armazenar os produtos, permitindo buscas rápidas.
+Arquitetura do sistema:
+O sistema foi dividido em módulos:
+- main.rs: ponto de entrada
+- produto.rs: estrutura do produto
+- busca.rs: lógica de busca
 
-Desempenho:
-O uso de HashMap garante um bom desempenho mesmo com grande quantidade de dados.
+Algoritmos e estruturas de dados:
+Foi utilizado HashMap para armazenar os produtos em formato chave-valor, permitindo buscas rápidas com complexidade próxima de O(1).
 
-Observação:
+Desempenho e escalabilidade:
+O uso de HashMap garante alta performance, permitindo que o sistema funcione bem mesmo com grande quantidade de dados.
+
+Contribuições:
 Projeto desenvolvido para fins acadêmicos.
+
+Licença:
+Uso educacional.
